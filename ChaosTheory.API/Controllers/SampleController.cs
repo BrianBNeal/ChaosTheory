@@ -24,7 +24,6 @@ public class SampleController : AuthenticatedBaseController
         sb.AppendLine($"Token: {(UserToken) ?? "none"}");
         sb.AppendLine($"You are {(IsAdmin ? "" : "not")} an admin.");
         sb.AppendLine($"You are {(IsUser ? "" : "not")} a user.");
-        sb.AppendLine($"You are {(IsGuest ? "" : "not")} a guest.");
 
         return Ok(sb.ToString());
     }

@@ -9,7 +9,6 @@ namespace ChaosTheory.API.Controllers
         protected bool LoggedIn => !string.IsNullOrWhiteSpace(UserToken);
         protected bool IsAdmin => User.IsInRole(UserRoles.Admin);
         protected bool IsUser => User.IsInRole(UserRoles.User);
-        protected bool IsGuest => User.IsInRole(UserRoles.Guest);
         protected string? UserToken => User.FindFirstValue("jti");
     }
 }

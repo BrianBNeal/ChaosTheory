@@ -1,5 +1,4 @@
-﻿using Azure;
-using ChaosTheory.Library.Utilities.Auth;
+﻿using ChaosTheory.Library.Utilities.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
